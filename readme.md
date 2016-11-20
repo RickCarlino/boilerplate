@@ -6,7 +6,7 @@ It's a bare minimum to get started with a TS / React project.
 
 ## The Stack
 
-![screenshot][screenshot.png]
+![screenshot](screenshot.png)
 
  * [Webpack](https://webpack.github.io/) for modules and bundling.
  * [Typescript](https://www.typescriptlang.org/) and TSLint for sanity.
