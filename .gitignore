@@ -1,0 +1,12 @@
+logs
+*.log
+npm-debug.log*
+pids
+*.pid
+*.seed
+*.pid.lock
+public/js
+node_modules
+.npm
+.node_repl_history
+*bundle.js
