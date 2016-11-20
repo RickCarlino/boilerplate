@@ -4,9 +4,12 @@ This is my boilerplate. There are many like it, but this one is mine.
 
 It's a bare minimum to get started with a TS / React project.
 
-## The Stack
+## Mandatory Screenshot
 
 ![screenshot](screenshot.png)
+
+## The Stack
+
 
  * [Webpack](https://webpack.github.io/) for modules and bundling.
  * [Typescript](https://www.typescriptlang.org/) and TSLint for sanity.
@@ -24,3 +27,4 @@ It's a bare minimum to get started with a TS / React project.
  - [ ] MobX
  - [ ] Code Splitting
  - [ ] Testing and code coverage tools.
+ 
