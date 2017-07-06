@@ -1,8 +1,7 @@
 # Boilerplate
 
-This is my boilerplate. There are many like it, but this one is mine.
-
-It's a bare minimum to get started with a TS / React project.
+This is my boilerplate for one off frontend projects.
+I try to update it every 6 months or so to keep up with the JS tooling steam roller.
 
 ## Mandatory Screenshot
 
@@ -24,7 +23,5 @@ It's a bare minimum to get started with a TS / React project.
 
 ## TODOs
 
- - [ ] MobX
- - [ ] Code Splitting
+ - [ ] Route based code Splitting
  - [ ] Testing and code coverage tools.
- 

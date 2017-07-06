@@ -1,5 +1,5 @@
 import * as React from "react";
 import { render } from "react-dom";
-import { routes } from "./routes";
+import { Routes } from "./wow";
 
-render(routes, document.getElementById("wow"));
+render(<Routes />, document.getElementById("wow"));

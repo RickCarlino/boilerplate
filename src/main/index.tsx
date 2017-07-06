@@ -1,40 +1,41 @@
 import * as React from "react";
 import { NavItem } from "./nav_item";
+import { RouteComponentProps } from "react-router";
 
-interface FrontProps {
-    children: JSX.Element | undefined;
+interface FrontProps extends RouteComponentProps<void> {
+  children?: React.ReactNode;
 }
 
 export function Front(props: FrontProps) {
-    return <div>
-        <nav className="pt-navbar .modifier">
-            <div className="pt-navbar-group pt-align-left">
-                <div className="pt-navbar-heading">Carlinoplate</div>
-            </div>
-            <div className="pt-navbar-group pt-align-right">
-                <NavItem to="/login">
-                    Login here
+  return <div>
+    <nav className="pt-navbar .modifier">
+      <div className="pt-navbar-group pt-align-left">
+        <div className="pt-navbar-heading">Carlinoplate</div>
+      </div>
+      <div className="pt-navbar-group pt-align-right">
+        <NavItem addr="/login">
+          Login here
                 </NavItem>
-                <NavItem to="/">
-                    Main
+        <NavItem addr="/">
+          Main
                 </NavItem>
-                <NavItem to="/about/foo">
-                    About Foo
+        <NavItem addr="/about/foo">
+          About Foo
                 </NavItem>
-                <NavItem to="/about/bar">
-                    About Bar
+        <NavItem addr="/about/bar">
+          About Bar
                 </NavItem>
-                <NavItem to="/kitchen_sink">
-                    UI Components
+        <NavItem addr="/kitchen_sink">
+          UI Components
                 </NavItem>
-                <span className="pt-navbar-divider"></span>
-                <NavItem to="/top_secret" className="pt-icon-airplane">
-                    Fwoosh
+        <span className="pt-navbar-divider"></span>
+        <NavItem addr="/top_secret" className="pt-icon-airplane">
+          Fwoosh
                 </NavItem>
-            </div>
-        </nav>
-        <div style={{ marginTop: 25 }}>
-            {props.children}
-        </div>
-    </div>;
+      </div>
+    </nav>
+    <div style={{ marginTop: 25 }}>
+      {props.children}
+    </div>
+  </div>;
 }
