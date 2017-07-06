@@ -7,29 +7,48 @@
   "scripts": {
     "start": "node dev_server.js",
     "build": "webpack --config webpack.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage --no-cache"
   },
   "author": "Rick Carlino",
   "license": "mit",
   "dependencies": {
     "@blueprintjs/core": "^1.22.0",
-    "@types/dom4": "^1.5.20",
-    "@types/react-router": "^4.0.12",
-    "@types/react-router-dom": "^4.0.5",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-redux": "^5.0.5",
     "react-router": "^4.1.1",
-    "react-router-dom": "^4.1.1"
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.7.1"
   },
   "devDependencies": {
+    "@types/enzyme": "^2.8.1",
+    "@types/jest": "^20.0.2",
     "@types/react": "^15.0.35",
     "@types/react-dom": "^15.5.1",
+    "@types/react-redux": "^4.4.45",
+    "@types/react-router": "^4.0.12",
+    "@types/react-router-dom": "^4.0.5",
+    "@types/redux": "^3.6.0",
     "@types/webpack": "^3.0.1",
     "@types/webpack-dev-server": "^2.4.0",
+    "enzyme": "^2.9.1",
+    "jest": "^20.0.4",
+    "ts-jest": "^20.0.6",
     "ts-loader": "^2.2.2",
     "tslint": "^5.5.0",
     "typescript": "^2.0.9",
     "webpack": "^3.1.0",
     "webpack-dev-server": "^2.5.0"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
   }
 }

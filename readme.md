@@ -24,4 +24,6 @@ I try to update it every 6 months or so to keep up with the JS tooling steam rol
 ## TODOs
 
  - [ ] Route based code Splitting
+ - [ ] Source maps
+ - [ ] Side effect handlers/ middlewares
  - [ ] Testing and code coverage tools.

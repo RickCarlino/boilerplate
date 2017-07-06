@@ -10,6 +10,9 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    extensions: [".js", ".ts", ".tsx"]
+  },
   entry: {
     "js/main": "./src/index.tsx"
   },
