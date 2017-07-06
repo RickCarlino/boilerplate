@@ -10,6 +10,7 @@ module.exports = {
       }
     ]
   },
+  devtool: "source-map",
   resolve: {
     extensions: [".js", ".ts", ".tsx"]
   },
@@ -18,7 +19,8 @@ module.exports = {
   },
   output: {
     filename: "[name].bundle.js",
-    path: __dirname + "/public"
+    path: __dirname + "/public",
+    devtoolLineToLine: true
   },
   devServer: {
     historyApiFallback: {
