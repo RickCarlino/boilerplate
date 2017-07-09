@@ -31,8 +31,8 @@ Check coverage reports inside the `coverage/` directory.
 
 ## TODOs
 
+ - [ ] Integrate react-redux-typescript
+ - [ ] Get `@connect()` components wired up to router.
  - [ ] Route based code Splitting
- - [ ] Source maps
- - [ ] Deployments and whatnot
- - [ ] Side effect handlers/ middlewares
- - [ ] Testing and code coverage tools.
+ - [ ] Deployments and whatnot (surge.sh maybe?)
+ - [ ] Side effect handlers / middlewares

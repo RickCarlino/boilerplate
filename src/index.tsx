@@ -1,6 +1,5 @@
 import * as React from "react";
 import { render } from "react-dom";
-import { Routes } from "./wow";
+import { Routes } from "./routes";
 
 render(<Routes />, document.getElementById("wow"));
-console.log("Are source maps on?");
